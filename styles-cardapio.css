@@ -1,0 +1,41 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.header a.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+.menu-options {
+    text-align: center;
+    margin: 20px;
+    
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top:7%;
+}

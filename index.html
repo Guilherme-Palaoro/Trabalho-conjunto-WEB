@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-group">
+            <img src="img/img_perfil.png" alt="Foto do Usuário" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 10px;">
+            <br>
+            <input type="text" id="matriculaInput" placeholder="Matrícula">
+        </div>
+        <div class="form-group">
+            <input type="password" id="senhaInput" placeholder="Senha">
+        </div>
+        <div class="forgot-password">Esqueceu a senha?</div>
+        
+        <button type="button" class="btn btn-green" onclick="validateLogin()">Entrar</button>
+        
+        <button class="btn btn-gray">Registrar</button>
+    </div>
+</body>
+
+<footer>
+  <img src="img/Logotipo.png" alt="Logo Fortes" >
+</footer>
+
+<script>
+  function validateLogin() {
+      var matricula = document.getElementById("matriculaInput").value;
+      var senha = document.getElementById("senhaInput").value;
+
+      if ((matricula === "cliente@fortes.com.br" && senha === "1234") || 
+         (matricula === "fornecedor@fortes.com.br" && senha === "1234")) {
+          alert("Login bem-sucedido! Redirecionando para a tela principal...");
+         
+          window.location.href = "tela-principal.html";
+      } else {
+          alert("Credenciais inválidas. Tente novamente.");
+      }
+  }
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <h2>Login</h2>
+
+    <form id="loginForm">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="validateLogin()">Entrar</button>
+    </form>
+
+    <p id="error-message" style="color: red;"></p>
+
+    <script>
+        function validateLogin() {
+            var email = document.getElementById("email").value.toLowerCase();
+            var password = document.getElementById("password").value;
+
+            if ((email === "cliente@fortes.com.br" && password === "senha_cliente") ||
+                (email === "fornecedor@fortes.com.br" && password === "senha_fornecedor")) {
+                alert("Login bem-sucedido!");
+                // Aqui você pode redirecionar para a próxima página ou realizar outras ações necessárias.
+            } else {
+                document.getElementById("error-message").innerHTML = "Credenciais inválidas. Tente novamente.";
+            }
+        }
+    </script>
+</body>
+</html>

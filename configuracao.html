@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-configuracao.css">
+    <title>Configurações</title>
+</head>
+<body>
+    <div class="header">
+        <a href="tela-principal.html" class="back-button">
+            <img src="img/Voltar.png" alt="Seta Voltar">
+        </a>
+        <img src="img/Configurações.png" alt="Ícone Configurações" class="config-icon">
+    </div>
+
+    <div class="config-list">
+        <h2>Aparência</h2>
+        <ul>
+            <li>
+                <label for="font-size">Tamanho da Fonte:</label>
+                <select id="font-size">
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio" selected>Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </li>
+            <li>
+                <label for="dark-mode">Tema Escuro:</label>
+                <input type="checkbox" id="dark-mode">
+            </li>
+        </ul>
+    </div>
+
+    <div class="config-list">
+        <h2>Volume</h2>
+        <ul>
+            <li>
+                <label for="call-volume">Volume da Chamada:</label>
+                <input type="range" id="call-volume" min="0" max="100" value="50">
+            </li>
+            <li>
+                <label for="notification-volume">Volume das Notificações:</label>
+                <input type="range" id="notification-volume" min="0" max="100" value="50">
+            </li>
+        </ul>
+    </div>
+
+    <div class="config-list">
+        <h2>Segurança</h2>
+        <ul>
+            <li>
+                <label for="lock-screen">Bloqueio de Tela:</label>
+                <select id="lock-screen">
+                    <option value="padrao">Padrão</option>
+                    <option value="pin" selected>PIN</option>
+                    <option value="senha">Senha</option>
+                </select>
+            </li>
+            <li>
+                <label for="fingerprint">Impressão Digital:</label>
+                <input type="checkbox" id="fingerprint">
+            </li>
+            <li>
+                <label for="change-password">Trocar Senha:</label>
+                <input type="password" id="change-password" placeholder="Nova Senha">
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <img src="img/Logotipo.png" alt="Logo Fortes" class="footer-logo">
+    </footer>
+</body>
+</html>
